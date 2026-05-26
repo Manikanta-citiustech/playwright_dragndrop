@@ -1,5 +1,5 @@
 const {test, expect} = require('@playwright/test');
-const {DragDropPage} = require('../pages/dragDropPage');
+const {DragDropPage} = require('../pages/DragDropPage');
 
 test.describe('Drag and Drop', () => {
 
@@ -14,7 +14,7 @@ test.describe('Drag and Drop', () => {
 
     test('Negative scenario: B have A', async ({page}) => {
         const dragDropPage = new DragDropPage(page);
-        await dragDropPage.navigate();
+        await dragDropPage.navigate(); 
 
         const colmB = await dragDropPage.getcolumnBText();
         await expect(colmB).toContain('A');
