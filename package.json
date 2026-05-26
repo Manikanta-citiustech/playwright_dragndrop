@@ -1,0 +1,30 @@
+{
+  "name": "playwright_dragndrop",
+  "version": "1.0.0",
+  "description": "POC for Drag n Drop",
+  "main": "index.js",
+  "scripts": {
+    "no_test": "echo \"Error: no test specified\" && exit 1",
+    "test": "playwright test",
+    "allure:report": "allure generate ./allure-results --clean && allure open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manikanta-citiustech/playwright_dragndrop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Manikanta-citiustech/playwright_dragndrop/issues"
+  },
+  "homepage": "https://github.com/Manikanta-citiustech/playwright_dragndrop#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "allure-playwright": "^3.9.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
